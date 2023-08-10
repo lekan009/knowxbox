@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
     <ion-toolbar>
         <ion-buttons slot="start">
             <ion-back-button [text]="'core.back' | translate"></ion-back-button>
@@ -14,7 +14,7 @@
             </ion-button>
         </ion-buttons>
     </ion-toolbar>
-</ion-header>
+</ion-header> -->
 <ion-content class="ion-padding" (keydown)="keyDown($event)" (keyup)="keyUp($event)">
     <core-loading [hideUntil]="!showLoading">
         <div class="list-item-limited-width">
@@ -25,14 +25,15 @@
 
                 <div class="core-login-site-logo" *ngIf="!showUserAvatar">
                     <!-- Show site logo or a default image. -->
-                    <img *ngIf="logoUrl" [src]="logoUrl" role="presentation" onError="this.src='assets/img/login_logo.png'" alt="">
-                    <img *ngIf="!logoUrl" src="assets/img/login_logo.png" role="presentation" alt="">
+                    <!-- <img *ngIf="logoUrl" [src]="logoUrl" role="presentation" onError="this.src='assets/img/login_logo.png'" alt="">
+                    <img *ngIf="!logoUrl" src="assets/img/login_logo.png" role="presentation" alt=""> -->
+                    <img src="assets/img/login_logo.png" role="presentation" alt="">
                 </div>
 
-                <p *ngIf="siteInfo?.siteName" class="ion-padding core-sitename">
+                <!-- <p *ngIf="siteInfo?.siteName" class="ion-padding core-sitename">
                     <core-format-text [text]="siteInfo?.siteName" [filter]="false"></core-format-text>
                 </p>
-                <p class="core-siteurl">{{siteUrl}}</p>
+                <p class="core-siteurl">{{siteUrl}}</p> -->
 
                 <ion-card *ngIf="!isLoggedOut" class="core-danger-card core-login-reconnect-warning">
                     <ion-item>

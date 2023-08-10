@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
+  "name": "knowxbox",
   "version": "4.3.0",
-  "description": "The official app for Moodle.",
+  "description": "The official app for KnowxBox.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "Olalekan Omotayo",
+    "email": "admin@olalekan.pw"
   },
   "repository": {
     "type": "git",
@@ -92,7 +92,6 @@
     "@types/dom-mediacapture-record": "1.0.7",
     "chart.js": "^2.9.4",
     "cordova": "^11.0.0",
-    "cordova-android": "^11.0.0",
     "cordova-clipboard": "^1.3.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
@@ -157,6 +156,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "check-es-compat": "^1.1.1",
     "compare-versions": "^4.1.4",
+    "cordova-android": "^10.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
@@ -192,8 +192,8 @@
   },
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "plugins": {
       "cordova-plugin-advanced-http": {
@@ -206,7 +206,7 @@
       },
       "cordova-plugin-chooser": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "moodlemobile",
+        "URL_SCHEME": "knowxbox",
         "ANDROID_SCHEME": " ",
         "ANDROID_HOST": " ",
         "ANDROID_PATHPREFIX": "/"
